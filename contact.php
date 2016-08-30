@@ -4,23 +4,29 @@
      <link rel="stylesheet" href="main.css">
      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script type="text/javascript" src="../js/angular.min.js"></script>
+     <script type="text/javascript" src="../js/angular-route.min.js"></script>
+     <script type="text/javascript" src="../js/angular-animate.min.js"></script>
      <script type="text/javascript" src="app.js"></script>
   </head>
-  <body>
+  <body ng-app=''>
   <div class="wrapper">
   
    <?php include 'nav.php';?>
 <div class='contact' >
      <div class='half '>
         <h1 style="margin-left:10%">Leave me a message:<h1>
-     <form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return checkMessage()" method="GET">
+     <form name="form" novalidate action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="GET">
       <ul >
-        <li><textarea  style="font-size:16px" cols="40" rows="1" name="name" placeholder="Name"></textarea></li>
-        <li><textarea  style="font-size:16px" cols="40" rows="1" name="email" placeholder="Email"></textarea></li>
-        <li><textarea  style="font-size:16px" cols="40" rows="1" name="subject" placeholder="Subject"></textarea></li>
-        <li><textarea  style="font-size:16px" cols="40" rows="5" name="message"  placeholder="Message"></textarea></li>      
+        <li><textarea  style="font-size:16px" cols="40" rows="1" name="name" ng-required="true" ng-model="name" placeholder="Name"></textarea></li>
+         <p class="error" ng-show="form.name.$invalid && form.name.$touched ">Please enter a name.</p>
+        <li><textarea  style="font-size:16px" cols="40" rows="1" name="email" ng-required="true" ng-model="email" type="email" placeholder="Email"></textarea></li>
+         <p class="error" ng-show="form.email.$invalid && form.email.$touched ">Please enter an correct email.</p>
+        <li><textarea  style="font-size:16px" cols="40" rows="1" name="subject" ng-model="subject" placeholder="Subject"></textarea></li>
+         <p class="error" ng-show="form.message.$invalid && form.message.$touched ">Please enter a message.</p>
+        <li><textarea  style="font-size:16px" cols="40" rows="5" name="message"  placeholder="Message" ng-model="message" ng-required="true"></textarea></li>      
         
-        <button  type="submit" class="btn btn-primary ">Send</button>
+        <button  type="submit" class="btn btn-primary " ng-disabled="form.$invalid">Send</button>
       
         </ul>
         </form>
