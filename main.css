@@ -1,0 +1,258 @@
+#address{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 550;
+	line-height: 26.4px;
+	
+}
+.nav a {
+  color: #5a5a5a;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav li {
+  display: inline;
+
+}
+.nav{
+	 padding: 30px 30px;
+}
+
+header h1 {
+     font-family:  Cursive,Helvetica, Verdana, Arial;
+     font-size:40px;
+     color: #808080;  
+	 margin:0;
+	 padding-top:20px;
+     /* padding: 25px 50px;*/
+     text-align:center;
+     
+}
+.body{
+	padding: 0 10px 0px;
+}
+.body h1{
+padding-right:25%;
+text-align:center;
+}
+.bot-container{
+	margin: 0;
+	padding: 0;
+	clear: both;
+	background-color: #00CED1;
+	width: 100%;
+}
+.nav{
+  display:inline;
+  text-align: center;
+
+}
+a span{
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+body{
+	background-color: #C0C0C0;
+	background-image: url("Subtle-light.png");
+	width: 100%;
+	border: none;
+	height: 100%;
+	
+ }
+ 
+ 
+.col-middle{
+  float: left;
+  width:50%;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+.col-side{
+  float: left;
+  width:25%;
+  padding-left: 80px;
+}
+#col-left-side{
+  float: left;
+  width:20%;
+  padding-left: 40px;
+}
+.col-side ul{
+  list-style-type: none;
+  padding-left:0px;
+   
+
+}
+
+.contact h1 {
+
+  /*margin-left: 150px;*/
+  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  color:#808080;
+
+}
+.contact button{
+  width:80px;
+  font-size:16px; 
+}
+.contact ul{
+list-style-type: none;
+font-size:1em;
+
+}
+ .col-middle hr{
+ border-color: black;
+ border-width: 2px;
+ margin: 5px 0px;
+
+}
+.col-side hr{
+border-color: black;
+border-width: 2px;
+margin-top: 17px ;
+margin-bottom: 17px;
+margin-left: 0px ;
+margin-right: 60px ;
+
+}
+.contact textarea{
+  resize: none;
+}
+.cvheader {
+  
+  margin: 50px 0px;
+  font-size:1.3em;
+
+}
+.cvheader li:hover{
+  color:black;
+  cursor:default;
+}
+.cvheader li{
+	background-color: rgb(186,216,242);
+	margin-bottom: 5px;
+	border-radius: 25px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.fixed{
+font-weight:900;	
+position:fixed;
+
+}
+@media (max-width: 1200px) {
+  .fixed{
+  position:static;
+
+	
+  }
+}
+
+.footer {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	width: 100%;
+	bottom: 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 24px;
+}
+.footer p{
+	margin-bottom:0;
+}
+
+.fb{
+  display:inline;
+  line-height:1.4em;
+  color:#ffffff;
+  font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  border: 0px solid #6495ED;
+  height: 70px;
+  width: 120px;
+  margin: auto;
+  padding: 20px 60px;
+  text-align: center;
+}
+.floatleft{
+  float: left;
+}
+.half{
+  margin-bottom:30px;
+  float: left;
+   width:40%;
+   margin-left: 10%;
+}
+.half p{
+  font-size:18px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  
+  
+}
+
+.img{
+  height:25%;
+   width:33% ;
+   margin:2% 5% 5%;
+}
+.preline{
+  white-space:pre; 
+}
+.wrapper {
+	margin-top: 0;
+	margin-bottom: 0;
+	min-width: 1200px;
+	min-height: 100%;
+	padding-bottom:100px;
+	position: relative;
+	bottom: 0;
+}
+
+.bottom {/*
+   height:50px;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   */
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0px;
+	height: 94px;
+	bottom:0;
+}
+html, body, div, span, form, label, header table, tr, th, td {
+	margin: 0;
+	border: 0;
+	padding:0;
+	font-size: 100%;
+	width: 100%;
+}
+html{
+	margin: 0;
+	height: 100%;
+
+}
+form ul li textarea.ng-invalid.ng-touched{
+   border:1px solid #DA3637;
+}
+form ul li textarea.ng-valid.ng-touched{
+   border:1px solid #509D12;
+}
+
+.ng-invalid .btn {
+  background:grey;
+}
+form .error{
+  color:red;
+}
