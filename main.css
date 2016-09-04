@@ -16,6 +16,8 @@
   text-decoration: none;
 }
 .nav li {
+  border-style:none;
+  border:0px;
   display: inline;
 
 }
