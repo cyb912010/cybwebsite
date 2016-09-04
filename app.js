@@ -10,3 +10,14 @@
 // 	  alert("Message Send!");
 // 	  return true;
 //   }
+
+function successful(){
+ alert("Message Send!");
+ return true;
+
+}
+$('#contact').click(function(){
+     // location.reload();
+     alert("wde");
+
+});
