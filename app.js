@@ -14,9 +14,10 @@
 function successful(){
  alert("Message Send!");
  return true;
-
 };
-$(document).on("click", "#contact", function() {
+$(document).on("load click", "#contact", function() {
    location.reload();
 });
+
+
 
