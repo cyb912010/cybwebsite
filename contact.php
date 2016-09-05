@@ -3,7 +3,7 @@
         <h1 style="margin-left:10%">Leave me a message:<h1>
 
 
-     <form id="myForm" name="myForm" novalidate ng-submit="processForm()" onsubmit="return successful()" method="GET">
+     <form id="form" name="form" novalidate ng-submit="processForm()" onsubmit="return successful()" method="GET">
       
 
       <ul >

@@ -28,24 +28,12 @@ app.controller('myCtrl', function($scope, $http,$location,$route) {
   headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
  })
   .success(function(data) {
-    document.getElementById("myForm").reset();
-     $scope.formData = {};
-      $scope.myForm.$setPristine();
-      //remove css class 
-      // console.log($scope.formData['name']);
-    // console.log(data);
-
-    // if (!data.success) {
-    //   // if not successful, bind errors to error variables
-    //   $scope.errorName = data.errors.name;
-    //   $scope.errorSuperhero = data.errors.superheroAlias;
-    // } else {
-    //   // if successful, bind success message to message
-    //   $scope.message = data.message;
-    // }
+    document.getElementById("form").reset();
+     $scope.formData = {};   
+     $scope.form.name.$setUntouched();
+     $scope.form.email.$setUntouched();
+     $scope.form.subject.$setUntouched();
+     $scope.form.message.$setUntouched();
   });
-// 
-console.log($scope.formData['name']+"wdc");
-
 };
 });
