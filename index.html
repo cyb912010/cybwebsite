@@ -13,12 +13,12 @@
   </head>
   <body ng-app="cybWebsite">
    <div class="wrapper">
-   <?php include 'nav.php';?>
+     <div ng-include="'nav.html'"></div>
    <div class="body">
    <div ng-view ></div>
      </div> <!-- end of profile-->
   <div style="clear:both"></div>
- <?php include 'footer.php';?>
+  <div ng-include="'footer.html'"></div>
  </div>
   
   </body>

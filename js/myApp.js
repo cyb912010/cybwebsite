@@ -7,11 +7,11 @@ app.config(function($routeProvider){
             
         })
         .when("/cv",{
-            templateUrl: "cv.php",
+            templateUrl: "cv.html",
           
         })
         .when("/contact",{
-            templateUrl: "contact.php",
+            templateUrl: "contact.html",
            
         })
         .otherwise({
